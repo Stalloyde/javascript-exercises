@@ -3,7 +3,7 @@ const sumAll = function(num1, num2) {
     let toSum = [];
     let getSum = 0;
   
-    if ((typeof num1 !== 'number') || (typeof num2 !== 'number') || (Math.sign(num1) === -1) || (Math.sign(num2) === -1)) {
+    if ((typeof num1 !== 'number') || (typeof num2 !== 'number') || (num1 < 0) || (num2 < 0)) {
       return 'ERROR';
     }
   
