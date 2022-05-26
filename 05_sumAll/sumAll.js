@@ -7,7 +7,6 @@ const sumAll = function(num1, num2) {
       return 'ERROR';
     }
   
-  
     if (num2 > num1) {
     for (let i = num1; i <= num2; i++) {
       toSum.push(i); //toSum === [1,2,3,4]
@@ -21,15 +20,12 @@ const sumAll = function(num1, num2) {
         };
     }
   
-  
     for (let i = 0; i < toSum.length; i++) {
       getSum += toSum[i];        
       } 
       return getSum; 
     }
   
-  
-
 // Do not edit below this line
 module.exports = sumAll;
 // (1,4).. need to add all numbers between 1 and 4 ie 1+2+3+4 =10;
