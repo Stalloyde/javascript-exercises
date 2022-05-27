@@ -1,11 +1,11 @@
 const ftoc = function(fInput) {
-  let getCelsius = (fInput -32) * 5/9;
+  let getCelsius = Math.round((fInput -32) * (5/9) *10)/10;
   
-    return parseFloat(getCelsius.toFixed(1));
+    return getCelsius;
   }
 
 const ctof = function(cInput) {
-  let getFahrenheit = (cInput * 9/5) + 32;
+  let getFahrenheit = Math.round((cInput * 9/5 + 32) *10)/10;
   
       return parseFloat(getFahrenheit.toFixed(1));
     }
